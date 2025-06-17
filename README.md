@@ -1,4 +1,4 @@
-# 🚀 Decentralized Crowdfunding Platform
+# Decentralized Crowdfunding Platform
 
 A modern, blockchain-based crowdfunding platform built with Next.js, Solidity smart contracts, and integrated with Chainlink services for enhanced functionality and fairness.
 
@@ -8,14 +8,14 @@ This decentralized crowdfunding platform enables users to create and support inn
 
 ### ✨ Key Features
 
-- **🎯 Campaign Creation**: Launch crowdfunding campaigns with customizable goals and deadlines
-- **💰 ETH Contributions**: Support projects using Ethereum with real-time progress tracking
-- **🏆 NFT Rewards**: Automatic NFT minting for special contributors (First, Top, VRF Winner)
-- **🎲 Fair Winner Selection**: Chainlink VRF integration for provably random winner selection
-- **📊 Real-time Price Feeds**: Chainlink Price Feeds for accurate ETH/USD conversion
-- **🔄 Automated Goal Handling**: Chainlink Automation for campaign lifecycle management
-- **📱 Responsive Design**: Modern UI with dark/light mode support
-- **🌐 IPFS Integration**: Decentralized storage for NFT metadata and images
+- **Campaign Creation**: Launch crowdfunding campaigns with customizable goals and deadlines
+- **ETH Contributions**: Support projects using Ethereum with real-time progress tracking
+- **NFT Rewards**: Automatic NFT minting for special contributors (First, Top, VRF Winner)
+- **Fair Winner Selection**: Chainlink VRF integration for provably random winner selection
+- **Real-time Price Feeds**: Chainlink Price Feeds for accurate ETH/USD conversion
+- **Automated Goal Handling**: Chainlink Automation for campaign lifecycle management
+- **Responsive Design**: Modern UI with dark/light mode support
+- **IPFS Integration**: Decentralized storage for NFT metadata and images
 
 ## 🏗️ Directory Structure
 
