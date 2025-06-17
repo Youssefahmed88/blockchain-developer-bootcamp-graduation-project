@@ -1,0 +1,6 @@
+[submodule "contracts/lib/chainlink"]
+	path = contracts/lib/chainlink
+	url = https://github.com/smartcontractkit/chainlink
+[submodule "contracts/lib/chainlink-mix"]
+	path = contracts/lib/chainlink-mix
+	url = https://github.com/smartcontractkit/chainlink-mix
