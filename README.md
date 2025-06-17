@@ -106,11 +106,11 @@ The project implements several key design patterns:
 ### 📍 Contract Addresses (Sepolia Testnet)
 
 ```
-Crowdfunding Contract: 0x[8003D32D8ccC97B108C4Ed4Bc327315f52C49E76]
-NFT Minter Contract: 0x[274625e8192e4cde0F54876a325e7B7CcA52e78C]
-Price Feed Contract: 0x[18ad382B50f8BAE8010F3FBb3a98fCEd1279778C]
-VRF Consumer Contract: 0x[7cEb9095Ad00D6b155C0AaD30f02Fc8524C21Dc5]
-Log Triager Contract: 0x[536c0cFBF886e90ACbe342d9D8bbfaB037AA3c80]
+Crowdfunding Contract: 0x8003D32D8ccC97B108C4Ed4Bc327315f52C49E76
+NFT Minter Contract: 0x274625e8192e4cde0F54876a325e7B7CcA52e78C
+Price Feed Contract: 0x18ad382B50f8BAE8010F3FBb3a98fCEd1279778C
+VRF Consumer Contract: 0x7cEb9095Ad00D6b155C0AaD30f02Fc8524C21Dc5
+Log Triager Contract: 0x536c0cFBF886e90ACbe342d9D8bbfaB037AA3c80
 ```
 
 ### 🔍 Verified Contracts
