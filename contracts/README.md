@@ -169,13 +169,17 @@ LOG_TRIAGER_ADDRESS=
 
 ### Deployment Steps
 
-1. **Deploy Contracts**
+1. **Manual Contracts Deployment**
 ```bash
-# Make deployment script executable
-chmod +x deploy.sh
-
-# Run deployment
-./deploy.sh
+# Deploy using Foundry script
+forge script script/Deploy.s.sol:DeployScript \
+--broadcast \
+--legacy \
+--verify \ 
+--etherscan-api-key $ETHERSCAN_API_KEY \
+--rpc-url \
+--private-key \
+--constructor-args
 ```
 
 2. **Verify Contracts**
@@ -185,16 +189,6 @@ chmod +x verify.sh
 
 # Run verification
 ./verify.sh
-```
-
-3. **Manual Deployment (Alternative)**
-```bash
-# Deploy using Foundry script
-forge script script/Deploy.s.sol:DeployScript \
-  --rpc-url $RPC_URL \
-  --broadcast \
-  --verify \
-  --etherscan-api-key $ETHERSCAN_API_KEY
 ```
 
 ### Post-Deployment Setup
@@ -241,18 +235,6 @@ forge coverage
 - Price feed integration
 - VRF winner selection
 
-**Integration Tests:**
-- End-to-end campaign lifecycle
-- Cross-contract interactions
-- Chainlink service integration
-- Event emission and handling
-
-**Security Tests:**
-- Reentrancy protection
-- Access control validation
-- Input sanitization
-- Edge case handling
-
 ## 📊 Gas Optimization
 
 ### Estimated Gas Costs (Sepolia)
@@ -267,12 +249,6 @@ forge coverage
 
 *Estimated at 10 gwei gas price and $2000 ETH
 
-### Optimization Techniques
-- Packed structs for storage efficiency
-- Batch operations where possible
-- Efficient loops and mappings
-- Minimal external calls
-
 ## 🔒 Security Considerations
 
 ### Implemented Protections
@@ -281,18 +257,6 @@ forge coverage
 - **Input Validation**: Comprehensive parameter checks
 - **Safe Math**: Solidity 0.8+ overflow protection
 - **Deadline Checks**: Time-based validation
-
-### Security Best Practices
-- Regular security audits recommended
-- Monitor contract interactions
-- Keep dependencies updated
-- Use multi-signature wallets for ownership
-- Implement emergency pause mechanisms
-
-### Known Limitations
-- Centralized owner control (consider DAO governance)
-- LINK token dependency for Chainlink services
-- Gas price volatility affects transaction costs
 
 ## 📈 Usage Examples
 
@@ -339,16 +303,6 @@ crowdfunding.withdrawFunds(1);
 ) = crowdfunding.campaigns(1);
 ```
 
-## 🔗 Contract Addresses (Sepolia Testnet)
-
-```
-Crowdfunding:    0x8003D32D8ccC97B108C4Ed4Bc327315f52C49E76
-NFTminter:       0x274625e8192e4cde0F54876a325e7B7CcA52e78C
-VRFv25Consumer:  0x7cEb9095Ad00D6b155C0AaD30f02Fc8524C21Dc5
-PriceDataFeed:   0x18ad382B50f8BAE8010F3FBb3a98fCEd1279778C
-LogTriager:      0x536c0cFBF886e90ACbe342d9D8bbfaB037AA3c80
-```
-
 ### Verified Contracts
 All contracts are verified on Etherscan:
 - [View on Sepolia Etherscan](https://sepolia.etherscan.io/)
@@ -373,18 +327,6 @@ All contracts are verified on Etherscan:
 - [VRF v2.5 Documentation](https://docs.chain.link/vrf/v2-5/overview)
 - [Price Feeds](https://docs.chain.link/data-feeds/price-feeds)
 - [Automation](https://docs.chain.link/chainlink-automation)
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Write comprehensive tests
-4. Follow Solidity style guide
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## ⚠️ Disclaimer
 
