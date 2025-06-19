@@ -1,0 +1,16 @@
+{
+    "name": "",
+    "private": true,
+    "version": "1.0.0",
+    "workspaces": [
+      "front-end/*",
+      "context"
+    ],
+    "scripts": {
+      "dev": "cd frontend && npm run dev",
+      "build": "cd frontend && npm run build",
+      "lint": "cd frontend && npm run lint",
+      "vercel-build": "cd frontend && npm run vercel-build"
+    }
+  }
+  
