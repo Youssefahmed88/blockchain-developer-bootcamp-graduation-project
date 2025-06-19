@@ -3,13 +3,15 @@
     "private": true,
     "version": "1.0.0",
     "workspaces": [
-      "front-end/*",
+      "front-end",
       "context"
     ],
     "scripts": {
       "dev": "cd front-end && npm run dev",
       "build": "cd front-end && npm run build",
       "lint": "cd front-end && npm run lint",
-      "vercel-build": "cd front-end && npm run vercel-build"
+      "vercel-build": "npm install && npm run vercel-build:front-end",
+      "vercel-build:front-end": "cd front-end && npm run vercel-build"
     }
   }
+  
