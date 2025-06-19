@@ -94,7 +94,7 @@ export default function CreateCampaignPage() {
       case "hours":
         return { min: 0.083, max: 8760 } // ~5 minutes to 1 year
       case "days":
-        return { min: 0.0035, max: 365 } // ~5 minutes to 1 year
+        return { min: 1, max: 365 } // الحد الأدنى 1 يوم بدلاً من 0.0035
       default:
         return { min: 1, max: 365 }
     }
@@ -122,7 +122,7 @@ export default function CreateCampaignPage() {
   const getEndDate = () => {
     const totalMinutes = getDurationInMinutes()
     const endDate = new Date(Date.now() + totalMinutes * 60 * 1000)
-    return endDate.toLocaleString()
+    return endDate.toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' })
   }
 
   // Form validation
@@ -131,16 +131,12 @@ export default function CreateCampaignPage() {
 
     if (!formData.title.trim()) {
       errors.title = "Campaign title is required"
-    } else if (formData.title.length < 10) {
-      errors.title = "Title should be at least 10 characters"
     } else if (formData.title.length > 100) {
       errors.title = "Title should not exceed 100 characters"
     }
 
     if (!formData.description.trim()) {
       errors.description = "Campaign description is required"
-    } else if (formData.description.length < 50) {
-      errors.description = "Description should be at least 50 characters"
     }
 
     if (!formData.goalAmount) {
@@ -435,12 +431,18 @@ export default function CreateCampaignPage() {
                                 ? "1"
                                 : formData.durationUnit === "hours"
                                   ? "0.1"
-                                  : "0.01"
+                                  : "1" // يسمح بقيم صحيحة عند اختيار Days
                             }
                             min={limits.min}
                             max={limits.max}
                             value={formData.duration}
-                            onChange={(e) => setFormData((prev) => ({ ...prev, duration: e.target.value }))}
+                            onChange={(e) => {
+                              const value = e.target.value;
+                              // تحقق من أن القيمة عددية
+                              if (!isNaN(Number(value)) || value === "") {
+                                setFormData((prev) => ({ ...prev, duration: value }));
+                              }
+                            }}
                             disabled={!isConnected || !isCorrectNetwork}
                             className={`flex-1 ${formErrors.duration ? "border-red-500" : ""}`}
                           />
