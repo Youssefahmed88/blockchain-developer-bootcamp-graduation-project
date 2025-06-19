@@ -87,7 +87,7 @@ export default function HomePage() {
   return (
     <>
       <Head>
-        <meta property="og:image" content="https://jade-managing-dinosaur-851.mypinata.cloud/ipfs/bafkreicbl26jzhsefjkdwin7ffhhwbeqf7zyfqxzjotqz55iutvfmfnfci" />
+        <meta property="og:image" content="https://drive.google.com/file/d/159OYvVqgSKOgdoe9E09bZTDOoq7rDOWk/view?usp=drive_link" />
         <meta property="og:title" content="Decentralized Crowdfunding" />
         <meta property="og:description" content="Support innovative projects or launch your own using secure blockchain technology" />
         <meta property="og:url" content="https://blockchain-developer-bootcamp-gradu.vercel.app/" />
