@@ -21,16 +21,16 @@ This decentralized crowdfunding platform enables users to create and support inn
 
 ```
 CROWDFUNDING/
-├── context/                          # React Context & Smart Contract Integration
-│   ├── Constants.tsx                # Contract addresses and ABIs
-│   ├── Crowdfunding.json           # Crowdfunding contract ABI
-│   ├── CrowdFundingContext.tsx     # Main crowdfunding logic context
-│   ├── NFTContext.tsx              # NFT management context
-│   ├── NFTminter.json              # NFT minter contract ABI
-│   ├── package-lock.json           # Context dependencies
-│   └── package.json                # Context package configuration
 ├── contracts/                       # Smart contracts directory
 ├── front-end/                      # Next.js Frontend Application
+│   ├── context/                          # React Context & Smart Contract Integration
+│   │   ├── Constants.tsx                # Contract addresses and ABIs
+│   │   ├── Crowdfunding.json           # Crowdfunding contract ABI
+│   │   ├── CrowdFundingContext.tsx     # Main crowdfunding logic context
+│   │   ├── NFTContext.tsx              # NFT management context
+│   │   ├── NFTminter.json              # NFT minter contract ABI
+│   │   ├── package-lock.json           # Context dependencies
+│   │   └── package.json                # Context package configuration
 │   ├── .next/                      # Next.js build output
 │   ├── app/                        # Next.js App Router
 │   │   ├── campaign/[id]/          # Dynamic campaign detail pages
@@ -122,7 +122,7 @@ All smart contracts are verified on Etherscan:
 
 ### 🌐 Live Demo
 
-- **Frontend**: [https://your-dapp-url.vercel.app](https://your-dapp-url.vercel.app)
+- **Hosting**: [https://blockchain-developer-bootcamp-graduation-project-3jirb0sbb.vercel.app](https://blockchain-developer-bootcamp-graduation-project-3jirb0sbb.vercel.app)
 - **IPFS Gateway**: [https://jade-managing-dinosaur-851.mypinata.cloud/ipfs/](https://jade-managing-dinosaur-851.mypinata.cloud/ipfs/)
 
 ## 🧪 How to Run Tests
