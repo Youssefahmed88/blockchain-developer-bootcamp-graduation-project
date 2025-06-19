@@ -17,7 +17,7 @@ import toast from "react-hot-toast"
 import { RingLoader } from "react-spinners"
 import { CheckCircle, Info, Rocket, DollarSign, Clock, AlertTriangle } from "lucide-react"
 import Link from "next/link"
-import { useCrowdFunding } from "../../../context/CrowdFundingContext"
+import { useCrowdFunding } from "../../context/CrowdFundingContext"
 
 interface Transaction {
   txHash?: string

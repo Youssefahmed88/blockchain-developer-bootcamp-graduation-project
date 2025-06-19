@@ -11,7 +11,7 @@ import { Alert, AlertDescription } from "@/components/ui/alert"
 import { Trophy, Crown, Gift, Search, Grid, List, AlertCircle, Wallet, RefreshCw } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import { useNFT } from "../../../context/NFTContext"
+import { useNFT } from "../../context/NFTContext"
 import { Navbar } from "@/components/navbar"
 
 interface UserNFT {

@@ -30,7 +30,7 @@ import {
   Crown,
   CheckCircle,
 } from "lucide-react"
-import { useCrowdFunding } from "../../../../context/CrowdFundingContext"
+import { useCrowdFunding } from "../../../context/CrowdFundingContext"
 
 interface Campaign {
   id: string

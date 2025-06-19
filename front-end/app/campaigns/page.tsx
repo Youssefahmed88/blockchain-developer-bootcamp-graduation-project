@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Card, CardContent } from "@/components/ui/card"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import { Search, TrendingUp, Clock, CheckCircle, Target, Wallet, AlertCircle, RefreshCw } from "lucide-react"
-import { useCrowdFunding } from "../../../context/CrowdFundingContext"
+import { useCrowdFunding } from "../../context/CrowdFundingContext"
 
 interface Campaign {
   id: string

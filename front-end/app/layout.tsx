@@ -5,8 +5,8 @@ import "./globals.css"
 import { ThemeProvider } from "next-themes"
 import Web3ModalProvider from "@/lib/web3modal-provider"
 import { Toaster } from "react-hot-toast"
-import { CrowdFundingProvider } from "../../context/CrowdFundingContext"
-import { NFTProvider } from "../../context/NFTContext"
+import { CrowdFundingProvider } from "../context/CrowdFundingContext"
+import { NFTProvider } from "../context/NFTContext"
 
 const inter = Inter({ subsets: ["latin"] })
 
