@@ -7,10 +7,9 @@
       "context"
     ],
     "scripts": {
-      "dev": "cd frontend && npm run dev",
-      "build": "cd frontend && npm run build",
-      "lint": "cd frontend && npm run lint",
-      "vercel-build": "cd frontend && npm run vercel-build"
+      "dev": "cd front-end && npm run dev",
+      "build": "cd front-end && npm run build",
+      "lint": "cd front-end && npm run lint",
+      "vercel-build": "cd front-end && npm run vercel-build"
     }
   }
-  
