@@ -222,14 +222,6 @@ forge script script/Deploy.s.sol:DeployScript --rpc-url $RPC_URL --broadcast --v
 6. **Track Progress**: Monitor campaign progress in real-time
 7. **Withdraw Funds**: Campaign creators can withdraw funds when goals are met
 
-### Demo Data
-
-The platform includes sample campaigns and mock data for testing:
-- Sample campaigns with various funding levels
-- Test NFT metadata stored on IPFS
-- Mock transaction history
-- Simulated Chainlink VRF winner selection
-
 ## 🛠️ Technology Stack
 
 - **Frontend**: Next.js 14, React 18, TypeScript, Tailwind CSS
